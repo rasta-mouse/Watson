@@ -1,5 +1,9 @@
 # Watson
 
+Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for useful Privilege Escalation vulnerabilities.
+
+My focus is on the latest priv esc's for the mainstream Operating Systems, to help pentesters leverage that timeframe between Patch Tuesday and patch deployment.
+
 ## Supported Versions
 
 - Windows 10 1703, 1709, 1803 & 1809
