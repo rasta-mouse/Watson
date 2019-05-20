@@ -7,7 +7,7 @@ My focus is on the latest priv esc's for the mainstream Operating Systems, to he
 ## Supported Versions
 
 - Windows 10 1703, 1709, 1803 & 1809
-- Server 2016
+- Server 2016 & 2019
 
 ## Basic Usage
 
