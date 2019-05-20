@@ -1,0 +1,7 @@
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\bin\Debug\Watson-2.0.exe.config
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\bin\Debug\Watson-2.0.exe
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\bin\Debug\Watson-2.0.pdb
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\obj\Debug\Watson 2.0.csproj.CoreCompileInputs.cache
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\obj\Debug\Watson-2.0.exe
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\obj\Debug\Watson-2.0.pdb
+C:\Tools\Watson-2.0\Watson 2.0\Watson 2.0\obj\Debug\Watson 2.0.csprojAssemblyReference.cache

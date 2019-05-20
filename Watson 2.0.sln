@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson 2.0", "Watson 2.0\Watson 2.0.csproj", "{49AD5F38-9E37-4967-9E84-FE19C7434ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A52437A3-85B0-4497-9F72-05482FB49849}
+	EndGlobalSection
+EndGlobal
