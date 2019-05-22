@@ -17,8 +17,8 @@ namespace Watson2
             // Supported version?
             List<string> supportedVersions = new List<string>()
             {
-                // 1703   1709     1803     1809
-                "15063", "16299", "17134", "17763"
+              // 1703     1709     1803     1809     1903
+                "15063", "16299", "17134", "17763", "18362"
             };
 
             if (!supportedVersions.Contains(buildNumber))
