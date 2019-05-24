@@ -12,7 +12,7 @@ My focus is on the latest priv esc's for the mainstream Operating Systems, to he
 ## Basic Usage
 
 ```
-C:\> Watson-2.0.exe
+C:\> Watson.exe
   __    __      _
  / / /\ \ \__ _| |_ ___  ___  _ __
  \ \/  \/ / _` | __/ __|/ _ \| '_ \
@@ -26,11 +26,9 @@ C:\> Watson-2.0.exe
  [*] OS Build Number: 17763
  [*] Enumerating installed KBs...
 
- [!] CVE-2018-8440 : VULNERABLE
-  [>] https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/local/alpc_taskscheduler.rb
-
- [!] CVE-2018-8897 : VULNERABLE
-  [>] https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/local/mov_ss.rb
+ [!] CVE-2019-0836 : VULNERABLE
+  [>] https://exploit-db.com/exploits/46718
+  [>] https://decoder.cloud/2019/04/29/combinig-luafv-postluafvpostreadwrite-race-condition-pe-with-diaghub-collector-exploit-from-standard-user-to-system/
 
  [!] CVE-2019-0841 : VULNERABLE
   [>] https://github.com/rogue-kdc/CVE-2019-0841
@@ -39,5 +37,5 @@ C:\> Watson-2.0.exe
  [!] CVE-2019-0863 : VULNERABLE
   [>] Exploits Unknown
 
- [*] Finished. Found 4 potential vulnerabilities.
+ [*] Finished. Found 3 potential vulnerabilities.
 ```
