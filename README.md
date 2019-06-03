@@ -39,3 +39,11 @@ C:\> Watson.exe
 
  [*] Finished. Found 3 potential vulnerabilities.
 ```
+
+## Issues
+
+- I try to update Watson after every Patch Tuesday, but MS do sneak extra patches in for $reasons. For potential false positives, check the latest supersedence information in the Windows Update Catalog.  If you still think there's an error, raise an Issue with the "Bug" label.
+
+- If there's a particular vulnerability that you want to see in Watson that's not already included, raise an Issue with the "Vulnerability Request" label and include the CVE number.
+
+- If you know of a good exploit for any of the vulnerbilities in Watson, raise an Issue with the "Exploit Suggestion" label.
