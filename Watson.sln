@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson", "Watson\Watson.csproj", "{A678DCEB-6A5F-4AE9-B122-DEECEFD6A87B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson", "Watson\Watson.csproj", "{49AD5F38-9E37-4967-9E84-FE19C7434ED7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A678DCEB-6A5F-4AE9-B122-DEECEFD6A87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A678DCEB-6A5F-4AE9-B122-DEECEFD6A87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A678DCEB-6A5F-4AE9-B122-DEECEFD6A87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A678DCEB-6A5F-4AE9-B122-DEECEFD6A87B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AD5F38-9E37-4967-9E84-FE19C7434ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FF4DE5F1-62B4-4FDF-8800-8C4943B52819}
+		SolutionGuid = {A52437A3-85B0-4497-9F72-05482FB49849}
 	EndGlobalSection
 EndGlobal

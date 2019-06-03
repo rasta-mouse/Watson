@@ -4,13 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A678DCEB-6A5F-4AE9-B122-DEECEFD6A87B}</ProjectGuid>
+    <ProjectGuid>{49AD5F38-9E37-4967-9E84-FE19C7434ED7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Watson</RootNamespace>
     <AssemblyName>Watson</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -37,36 +36,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SuspectFiles\AfdSys.cs" />
-    <Compile Include="SuspectFiles\AtmfdDll.cs" />
-    <Compile Include="SuspectFiles\CoremessagingDll.cs" />
-    <Compile Include="SuspectFiles\Gdi32Dll.cs" />
-    <Compile Include="SuspectFiles\GdiplusDll.cs" />
-    <Compile Include="SuspectFiles\GpprefclDll.cs" />
-    <Compile Include="SuspectFiles\MrxdavSys.cs" />
-    <Compile Include="SuspectFiles\NtoskrnlExe.cs" />
-    <Compile Include="SuspectFiles\PcadmDll.cs" />
-    <Compile Include="SuspectFiles\Rpcrt4Dll.cs" />
-    <Compile Include="SuspectFiles\SchedsvcDll.cs" />
-    <Compile Include="SuspectFiles\SeclogonDll.cs" />
-    <Compile Include="SuspectFiles\Win32kfullSys.cs" />
-    <Compile Include="SuspectFiles\Win32kSys.cs" />
-    <Compile Include="SuspectFiles\WinloadExe.cs" />
-    <Compile Include="SuspectFiles\WinsrvDll.cs" />
-    <Compile Include="VulnerabilityCollection.cs" />
-    <Compile Include="Vulnerability.cs" />
-    <Compile Include="SystemInfoHelpers.cs" />
     <Compile Include="Info.cs" />
+    <Compile Include="Msrc\CVE-2018-8897.cs" />
+    <Compile Include="Msrc\CVE-2019-0836.cs" />
+    <Compile Include="Msrc\CVE-2019-0863.cs" />
+    <Compile Include="Msrc\CVE-2019-0841.cs" />
+    <Compile Include="Msrc\CVE-2018-8440.cs" />
+    <Compile Include="VulnerabilityCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SystemInfo.cs" />
+    <Compile Include="Vulnerability.cs" />
+    <Compile Include="Wmi.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
