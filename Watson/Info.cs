@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watson2
+namespace Watson
 {
     public class Info
     {

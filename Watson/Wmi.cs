@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Watson2
+namespace Watson
 {
     public class Wmi
     {

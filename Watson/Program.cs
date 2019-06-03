@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Watson2.Msrc;
+using Watson.Msrc;
 
-namespace Watson2
+namespace Watson
 {
     class Program
     {
