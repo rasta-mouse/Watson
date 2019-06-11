@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Watson.Msrc;
 
 namespace Watson
@@ -41,11 +42,11 @@ namespace Watson
             VulnerabilityCollection vulnerabiltiies = new VulnerabilityCollection();
 
             // Check each one
-            CVE_2018_8440.Check(vulnerabiltiies, buildNumber, installedKBs);
-            CVE_2018_8897.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_0836.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_0841.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_0863.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1064.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1069.Check(vulnerabiltiies, buildNumber, installedKBs);
 
             // Print the results
             vulnerabiltiies.ShowResults();
