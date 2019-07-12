@@ -47,6 +47,8 @@ namespace Watson
             CVE_2019_0863.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_1064.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_1069.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1129.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1130.Check(vulnerabiltiies, buildNumber, installedKBs);
 
             // Print the results
             vulnerabiltiies.ShowResults();

@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="Info.cs" />
     <Compile Include="Msrc\CVE-2019-0836.cs" />
+    <Compile Include="Msrc\CVE-2019-1130.cs" />
+    <Compile Include="Msrc\CVE-2019-1129.cs" />
     <Compile Include="Msrc\CVE-2019-1069.cs" />
     <Compile Include="Msrc\CVE-2019-1064.cs" />
     <Compile Include="Msrc\CVE-2019-0863.cs" />
