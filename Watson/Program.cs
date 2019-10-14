@@ -18,8 +18,15 @@ namespace Watson
             // Supported version?
             List<string> supportedVersions = new List<string>()
             {
-              // 1703     1709     1803     1809     1903
-                "15063", "16299", "17134", "17763", "18362"
+                "10240", //1507
+                "10586", //1511
+                "14393", //1607 & 2K16
+                "15063", //1703
+                "16299", //1709
+                "17134", //1803
+                "17763", //1809 & 2K19
+                "18362" //1903
+                //"18363", //1909
             };
 
             if (!supportedVersions.Contains(buildNumber))
@@ -44,11 +51,10 @@ namespace Watson
             // Check each one
             CVE_2019_0836.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_0841.Check(vulnerabiltiies, buildNumber, installedKBs);
-            CVE_2019_0863.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_1064.Check(vulnerabiltiies, buildNumber, installedKBs);
-            CVE_2019_1069.Check(vulnerabiltiies, buildNumber, installedKBs);
-            CVE_2019_1129.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_1130.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1253.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1315.Check(vulnerabiltiies, buildNumber, installedKBs);
 
             // Print the results
             vulnerabiltiies.ShowResults();

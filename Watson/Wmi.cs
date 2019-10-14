@@ -1,8 +1,5 @@
-﻿using System;
-using System.Management;
+﻿using System.Management;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Watson
 {
@@ -17,7 +14,7 @@ namespace Watson
 
             foreach (ManagementObject kb in collection)
             {
-                KbList.Add((kb["HotFixID"].ToString()).Remove(0, 2));
+                KbList.Add(kb["HotFixID"].ToString().Remove(0, 2));
             }
 
             return KbList;
