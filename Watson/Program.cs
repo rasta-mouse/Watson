@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Watson.Msrc;
@@ -12,7 +12,19 @@ namespace Watson
             Info.PrintLogo();
 
             // OS Build number
-            string buildNumber = Wmi.GetBuildNumber();
+            string buildNumber = string.Empty;
+            try
+            {
+                buildNumber = Wmi.GetBuildNumber();
+            }
+            catch (System.Management.ManagementException ex)
+            {
+                if (ex.Message.Trim() == "Access denied")
+                {
+                    Console.WriteLine(" [!] Not enough privileges to run\r\n");
+                    Environment.Exit(1);
+                }
+            }
             Console.WriteLine(" [*] OS Build Number: {0}", buildNumber);
 
             // Supported version?
