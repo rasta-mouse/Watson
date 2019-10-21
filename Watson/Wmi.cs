@@ -12,13 +12,15 @@ namespace Watson
 
             try
             {
-                ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"root\cimv2", "SELECT HotFixID FROM Win32_QuickFixEngineering");
-                ManagementObjectCollection collection = searcher.Get();
-
-                foreach (ManagementObject kb in collection)
+                using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"root\cimv2", "SELECT HotFixID FROM Win32_QuickFixEngineering"))
                 {
-                    KbList.Add(kb["HotFixID"].ToString().Remove(0, 2));
-                }
+                    ManagementObjectCollection collection = searcher.Get();
+
+                    foreach (ManagementObject kb in collection)
+                    {
+                        KbList.Add(kb["HotFixID"].ToString().Remove(0, 2));
+                    }
+                }   
             }
             catch (ManagementException e)
             {
@@ -34,12 +36,14 @@ namespace Watson
 
             try
             {
-                ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"root\cimv2", "SELECT BuildNumber FROM Win32_OperatingSystem");
-                ManagementObjectCollection collection = searcher.Get();
-
-                foreach (ManagementObject num in collection)
+                using (ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"root\cimv2", "SELECT BuildNumber FROM Win32_OperatingSystem"))
                 {
-                    buildNum = (string)num["BuildNumber"];
+                    ManagementObjectCollection collection = searcher.Get();
+
+                    foreach (ManagementObject num in collection)
+                    {
+                        buildNum = (string)num["BuildNumber"];
+                    }
                 }
             }
             catch (ManagementException e)
