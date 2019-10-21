@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Watson.Msrc;
@@ -11,11 +11,7 @@ namespace Watson
         {
             Info.PrintLogo();
 
-            // OS Build number
-            string buildNumber = Wmi.GetBuildNumber();
-            Console.WriteLine(" [*] OS Build Number: {0}", buildNumber);
-
-            // Supported version?
+            // Supported versions
             List<string> supportedVersions = new List<string>()
             {
                 "10240", //1507
@@ -29,10 +25,17 @@ namespace Watson
                 //"18363", //1909
             };
 
+            // Get OS Build number
+            string buildNumber = Wmi.GetBuildNumber();
+            if (!string.IsNullOrEmpty(buildNumber))
+                Console.WriteLine(" [*] OS Build Number: {0}", buildNumber);
+            else
+                return;
+
             if (!supportedVersions.Contains(buildNumber))
             {
                 Console.WriteLine(" [!] Windows version not supported\r\n");
-                Environment.Exit(1);
+                return;
             }
 
             // List of KBs installed
@@ -41,7 +44,7 @@ namespace Watson
 
 #if DEBUG
             foreach (string kb in installedKBs)
-                Console.WriteLine(kb);
+                Console.WriteLine(" {0}", kb);
             Console.WriteLine();
 #endif
 
