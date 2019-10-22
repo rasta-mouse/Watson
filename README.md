@@ -1,15 +1,13 @@
 # Watson
 
-Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for useful Privilege Escalation vulnerabilities.
-
-My focus is on the latest priv esc's for the mainstream Operating Systems, to help pentesters leverage that timeframe between Patch Tuesday and patch deployment.
+Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.
 
 ## Supported Versions
 
-- Windows 10 1703, 1709, 1803 & 1809
+- Windows 10 1507, 1511, 1607, 1703, 1709, 1803, 1809
 - Server 2016 & 2019
 
-## Basic Usage
+## Usage
 
 ```
 C:\> Watson.exe
@@ -23,7 +21,7 @@ C:\> Watson.exe
 
                    @_RastaMouse
 
- [*] OS Build Number: 17763
+ [*] OS Build Number: 14393
  [*] Enumerating installed KBs...
 
  [!] CVE-2019-0836 : VULNERABLE
@@ -34,10 +32,19 @@ C:\> Watson.exe
   [>] https://github.com/rogue-kdc/CVE-2019-0841
   [>] https://rastamouse.me/tags/cve-2019-0841/
 
- [!] CVE-2019-0863 : VULNERABLE
-  [>] Exploits Unknown
+ [!] CVE-2019-1064 : VULNERABLE
+  [>] https://www.rythmstick.net/posts/cve-2019-1064/
 
- [*] Finished. Found 3 potential vulnerabilities.
+ [!] CVE-2019-1130 : VULNERABLE
+  [>] https://github.com/S3cur3Th1sSh1t/SharpByeBear
+
+ [!] CVE-2019-1253 : VULNERABLE
+  [>] https://github.com/padovah4ck/CVE-2019-1253
+
+ [!] CVE-2019-1315 : VULNERABLE
+  [>] https://offsec.almond.consulting/windows-error-reporting-arbitrary-file-move-eop.html
+
+ [*] Finished. Found 6 potential vulnerabilities.
 ```
 
 ## Issues
