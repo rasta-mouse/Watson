@@ -21,8 +21,8 @@ namespace Watson
                 "16299", //1709
                 "17134", //1803
                 "17763", //1809 & 2K19
-                "18362" //1903
-                //"18363", //1909
+                "18362", //1903
+                "18363", //1909
             };
 
             // Get OS Build number
@@ -58,6 +58,9 @@ namespace Watson
             CVE_2019_1130.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_1253.Check(vulnerabiltiies, buildNumber, installedKBs);
             CVE_2019_1315.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1385.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1388.Check(vulnerabiltiies, buildNumber, installedKBs);
+            CVE_2019_1405.Check(vulnerabiltiies, buildNumber, installedKBs);
 
             // Print the results
             vulnerabiltiies.ShowResults();
