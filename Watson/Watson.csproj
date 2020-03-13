@@ -55,6 +55,7 @@
     <Compile Include="Msrc\CVE-2019-1130.cs" />
     <Compile Include="Msrc\CVE-2019-1064.cs" />
     <Compile Include="Msrc\CVE-2019-0841.cs" />
+    <Compile Include="Msrc\CVE_2020_0796.cs" />
     <Compile Include="VulnerabilityCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
