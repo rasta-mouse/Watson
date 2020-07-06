@@ -1,6 +1,6 @@
 # Watson
 
-Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.
+Watson is a .NET v4.0.x tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.
 
 ## Supported Versions
 
