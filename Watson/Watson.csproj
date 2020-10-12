@@ -48,6 +48,9 @@
     <Compile Include="Info.cs" />
     <Compile Include="Msrc\CVE-2019-1253.cs" />
     <Compile Include="Msrc\CVE-2019-1385.cs" />
+    <Compile Include="Msrc\CVE-2020-0668.cs" />
+    <Compile Include="Msrc\CVE-2020-0683.cs" />
+    <Compile Include="Msrc\CVE-2020-1013.cs" />
     <Compile Include="Msrc\CVE-2019-1405.cs" />
     <Compile Include="Msrc\CVE-2019-1388.cs" />
     <Compile Include="Msrc\CVE-2019-1315.cs" />
