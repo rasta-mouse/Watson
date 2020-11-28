@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-
 using Watson.Msrc;
 
 namespace Watson
@@ -15,27 +14,26 @@ namespace Watson
             var supportedVersions = new Dictionary<int, string>()
             {
                 { 10240, "1507" }, { 10586, "1511" }, { 14393, "1607" }, { 15063, "1703" }, { 16299, "1709" },
-                { 17134, "1803" }, { 17763, "1809" }, { 18362, "1903" }, { 18363, "1909" }, { 19041, "2004" }
+                { 17134, "1803" }, { 17763, "1809" }, { 18362, "1903" }, { 18363, "1909" }, { 19041, "2004" }, { 19042, "20H2" }
             };
 
             // Get OS Build number
             var buildNumber = Wmi.GetBuildNumber();
-            if (buildNumber != 0)
-            {
-                var version = supportedVersions[buildNumber];
-                Console.WriteLine(" [*] OS Version: {0} ({1})", version, buildNumber);
-            }
-            else
+            if (buildNumber == 0)
             {
                 Console.Error.WriteLine(" [!] Could not retrieve Windows BuildNumber");
                 return;
-            }   
+            }
 
             if (!supportedVersions.ContainsKey(buildNumber))
             {
                 Console.Error.WriteLine(" [!] Windows version not supported");
                 return;
             }
+
+
+            var version = supportedVersions[buildNumber];
+            Console.WriteLine(" [*] OS Version: {0} ({1})", version, buildNumber);
 
             // List of KBs installed
             Console.WriteLine(" [*] Enumerating installed KBs...");
